@@ -113,6 +113,27 @@ public class splash extends javax.swing.JFrame {
                 Thread.sleep(40);
                 Mysplash.myprogress.setValue(i);
                 Mysplash.percentage.setText(Integer.toString(i)+"%");
+                 if(i==10)
+               {
+                   Mysplash.Load.setText("Turning On Modules...");
+               }
+               if(i==20)
+               {
+                   Mysplash.Load.setText("Loading Modules...");
+               }
+               if(i==50)
+               {
+                   Mysplash.Load.setText("Connecting to Database...");
+               }
+                if(i==50)
+               {
+                   Mysplash.Load.setText("Connecting to Database...");
+               }
+                 if(i==80)
+               {
+                   Mysplash.Load.setText("Launching Application...");
+               }
+                 Mysplash.myprogress.setValue(i);
             }
         }
         catch(Exception e){
